@@ -1,10 +1,7 @@
-/*Toute les page*/
-h1 {
-	font-family: 'Indira';
-}
-
 body {
-	background-color: #675f5f19;
+	background-color: #e8e1e1;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: #d1b8b8;
 }
 
 
@@ -16,7 +13,6 @@ body {
 	color: #ffffff;
 	cursor: pointer;
 	display: inline-block;
-	font-family: "Melissa";
 	font-weight: 600;
 	font-size: 30px;
 	padding: 0 18px;
@@ -54,18 +50,6 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
-#SecondEnigme{
-	font-size: 50px;
-	text-align: center;
-	color: rgb(0, 0, 0);
-}
-.footerSegEngime{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 13.5%;
-	margin-left: 50px;
-	margin-right: 50px;
-}
 #ConfirmButton{
 	background-color: #000000;
 	border: 2px solid #422800;
@@ -73,7 +57,6 @@ body {
 	color: #ffffff;
 	box-shadow: #422800 3px 3px 0 0;
 	cursor: pointer;
-	font-family: "Melissa";
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
@@ -91,7 +74,6 @@ body {
 	color: #ffffff;
 	box-shadow: #422800 3px 3px 0 0;
 	cursor: pointer;
-	font-family: "Melissa";
 	font-size:40px;
 	line-height: 35px;
 	text-align: center;
@@ -104,7 +86,7 @@ body {
 
 #digicode #DigicodeGrid {
 	display: grid;
-	grid-template-columns: auto auto auto auto auto auto;
+	grid-template-columns: auto auto auto auto auto;
 	width: 500px;
 }
 #digicode .buttonDigi {
@@ -113,7 +95,6 @@ body {
 	border: 1px solid #422800;
 	width: 100px;
 	height: 100px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #digicode main {
@@ -128,4 +109,43 @@ body {
 
 #digicode .Confirm button {
 	width: 100px;
+}
+
+#questionPage h1, #questionPage h2{
+	text-align: center;
+}
+
+#questionPage img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	/*border: solid 2px black;*/
+	border-radius: 2.5%;
+}
+
+#questionPage section{
+	margin: 50px auto 0px auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	height: 250px;
+	width: 1000px;
+}
+
+#accueil h1 a{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited, a{
+	color: blue;
+}
+
+h1{
+	text-align: center;
+	color: black;
+}
+
+#bff main{
+	text-align: center;
 }

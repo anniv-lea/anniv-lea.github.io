@@ -44,35 +44,46 @@ function LoadList(){
     c23 = document.getElementById("c23");
     c24 = document.getElementById("c24");
     c25 = document.getElementById("c25");
-    c26 = document.getElementById("c26");
+    /*c26 = document.getElementById("c26");
     c27 = document.getElementById("c27");
     c28 = document.getElementById("c28");
     c29 = document.getElementById("c29");
-    c30 = document.getElementById("c30");
+    c30 = document.getElementById("c30");*/
     
+    /*list = [c1, c2, c3, c4, c5, c6, c7, c8 , c9, c10, 
+        c11, c12, c13, c14, c15, c16, c17, c18 , c19, c20,
+        c21, c22, c23, c24, c25, c26, c27, c28, c29, c30];*/
     list = [c1, c2, c3, c4, c5, c6, c7, c8 , c9, c10, 
         c11, c12, c13, c14, c15, c16, c17, c18 , c19, c20,
-        c21, c22, c23, c24, c25, c26, c27, c28, c29, c30];
+        c21, c22, c23, c24, c25];
     
     return list;
 }
 
 
 function Check(){
-    acceptedNumberBlue = [1, 2, 7, 8, 13, 14, 19, 20, 25, 26];
+    acceptedNumberRed = [0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24];
+    acceptedNumberWhite = [7, 11, 12, 13, 17];
+    /*acceptedNumberBlue = [1, 2, 7, 8, 13, 14, 19, 20, 25, 26];
     acceptedNumberWhite = [3, 4, 9, 10, 15, 16, 21, 22, 27, 28];
-    acceptedNumberRed = [5, 6, 11, 12, 17, 18, 23, 24, 29, 30];
+    acceptedNumberRed = [5, 6, 11, 12, 17, 18, 23, 24, 29, 30];*/
     
     list = LoadList();
 
-    colorList = ["blue", "white", "red"];
-    numberList = [acceptedNumberBlue, acceptedNumberWhite, acceptedNumberRed];
+    /*colorList = ["blue", "white", "red"];
+    numberList = [acceptedNumberBlue, acceptedNumberWhite, acceptedNumberRed];*/
+    colorList = ["red", "white"];
+    numberList = [acceptedNumberRed, acceptedNumberWhite];
     check = false;
     checkNumber = 0;
 
+    //console.log(list[numberList[0]])
+
     for (let j = 0; j < numberList.length; j++){
         for (let i = 0; i < numberList[j].length; i++){
-            if (list[numberList[j][i] - 1].style.backgroundColor == colorList[j]){
+            //console.log(list[numberList[j][i] - 1].style.backgroundColor);
+            //console.log(colorList[j]);
+            if (list[numberList[j][i]].style.backgroundColor == colorList[j]){
                 checkNumber++;
             }
         }

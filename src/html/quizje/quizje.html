@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur moi</title>
+    <link rel="stylesheet" href="../../../ressources/css/style.css">
+    <script src="../../js/questionJe.js"></script>
+</head>
+<body id="questionPage">
+    <header id="header">
+        <a href="../../../index.html">
+            Accueil
+        </a>
+        <h1 id="questionTitle">
+            Quelles sont mes nationalités ?
+        </h1>
+    </header>
+    <main>
+        <img alt="image question 1" src="../../../userContent/pictures/flag.png" id="picture">
+        <section>
+            <input class="proposition" type="button" value="France-Belge" id="q1" onclick="Check(this)">
+            <input class="proposition" type="button" value="Suisse-Belge" id="q2" onclick="Check(this)">
+            <input class="proposition" type="button" value="France-Suisse" id="q3" onclick="Check(this)">
+            <input class="proposition" type="button" value="Suisse-Espagnol" id="q4" onclick="Check(this)">
+        </section>
+    </main>
+</body>
+</html>
