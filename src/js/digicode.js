@@ -94,6 +94,6 @@ function Check(){
     }
 
     if(check){
-        alert("indice : félicitation");
+        alert('Tu es une personne en qui j'+ "'" +'ai une énorme "confiance"\n(Note bien le fait que je met des guillemets seulement parce que je ne peux pas souligner ici, je pense réellement ce que j' + "'" + 'ai dis au dessus ^^)');
     }
 }

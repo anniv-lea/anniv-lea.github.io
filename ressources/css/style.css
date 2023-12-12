@@ -1,7 +1,8 @@
 body {
 	background-color: #e8e1e1;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	color: #d1b8b8;
+	/*color: #d1b8b8;*/
+	color: #835b5b;
 }
 
 
@@ -120,6 +121,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 250px;
+	height: 250px;
 	/*border: solid 2px black;*/
 	border-radius: 2.5%;
 }
@@ -132,9 +134,18 @@ body {
 	width: 1000px;
 }
 
+#questionPage input[type=button]{
+	width: 500px;
+	background-color: #c6c0c0;
+}
+
+#questionPage input[type=button]:hover{
+	background-color: #a99b9b;
+}
+
 #accueil h1 a{
 	text-decoration: none;
-	color: black;
+	color: #835b5b;
 }
 
 a:visited, a{
@@ -143,9 +154,48 @@ a:visited, a{
 
 h1{
 	text-align: center;
-	color: black;
 }
 
-#bff main{
+#bff main, #picture main section{
 	text-align: center;
+}
+
+#picture section{
+	text-align: center;
+	width: 977px;
+	height: 550px;
+	margin: 0 auto;
+}
+
+#picture img{
+	height: 550px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 1;
+}
+
+#accueil main{
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	height: 500px;
+}
+
+#answer{
+	text-decoration: underline;
+}
+
+button{
+	background-color: #c6c0c0;
+	height: 50px;
+	width: 300px;
+	margin: 2.5px;
+}
+
+button:hover{
+	background-color: #a99b9b;
 }

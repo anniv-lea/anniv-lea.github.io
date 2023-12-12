@@ -1,4 +1,6 @@
 questionNumber = 0;
+correctColor = "#6ea407";
+incorrectColor = "#e53523";
 
 function Check(selected){
     q1 = document.getElementById('q1');
@@ -10,7 +12,7 @@ function Check(selected){
     header = document.getElementById('header');
     originalColor = document.getElementsByClassName('proposition')[0].style.backgroundColor;
 
-    permaLink = "../../../userContent/pictures/"
+    permaLink = "../../../userContent/pictures/";
     buttonList = [q1, q2, q3, q4];
     answerSelected = "";
 
@@ -34,7 +36,7 @@ function Check(selected){
         }
     }
     if (answerList[questionNumber] == answerSelected.value){
-        selected.style.backgroundColor = "green";
+        selected.style.backgroundColor = correctColor;
         setTimeout(function() { 
             selected.style.backgroundColor = originalColor;
             for (let j = 0; j < buttonList.length; j++){
@@ -52,7 +54,7 @@ function Check(selected){
         }
     }
     else{
-        selected.style.backgroundColor = "red";
+        selected.style.backgroundColor = incorrectColor;
         setTimeout(function() { selected.style.backgroundColor = originalColor; }, 500);
     }
 }
@@ -63,7 +65,16 @@ function Victory(){
     }
     question.innerHTML = "Félicitation ! Tu nous connais bien ! ^^"
     text = document.createElement("h2");
-    text.innerHTML = "Le mot est : ";
+    text.id = "newTitleMe";
+    text.innerHTML = "Je veux que tu sois / je veux te rendre ";
+
     header.insertBefore(text, null);
+
+    h2 = document.getElementById('newTitleMe');
+    span = document.createElement("span");
+    span.id = "answer";
+    span.innerHTML = "heureuse";
+
+    h2.insertBefore(span, null);
     picture.remove();
 }
