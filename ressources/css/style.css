@@ -199,3 +199,12 @@ button{
 button:hover{
 	background-color: #a99b9b;
 }
+
+#bff main{
+	display: grid;
+	justify-items: center;
+}
+
+#bffPicture{
+	margin-top: 100px;
+}
