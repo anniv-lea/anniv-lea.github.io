@@ -20,7 +20,7 @@ function Check(selected){
     proposition2 = ["Ping-pong", "Rugby", "Hockey", "Gymnastique"];
     proposition3 = ["1", "2", "3", "4"];
     proposition4 = ["Gauche", "Les deux, vive la richesse", "Droite", "Je ne met pas de montre"];
-    proposition5 = ["Un niveau miniature", "Un mètre", "Un skotch", "Un tournevis plat"];
+    proposition5 = ["Un niveau miniature", "Un mètre", "Un scotch", "Un tournevis plat"];
     proposition6 = ["Nos prénom", "Le jour de naissance", "Admiration Sea of thieves", "Les prénoms de nos papa"];
 
     propositions = [proposition1, proposition2, proposition3, proposition4, proposition5, proposition6];
