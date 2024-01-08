@@ -26,7 +26,7 @@ function Check(selected){
 
     victoryCondition = answerList.length - 1;
 
-    questionList = ["Que sait-on faire tous les deux ?", 'Quel "smiley" utilisons-nous le plus souvent ?'];
+    questionList = ["Que sait-on faire tous les deux ? (théoriquement)", 'Quel "smiley" utilisons-nous le plus souvent ?'];
 
 
 
