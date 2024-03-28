@@ -22,11 +22,12 @@ function Check(selected){
     proposition4 = ["Gauche", "Les deux, vive la richesse", "Droite", "Je ne met pas de montre"];
     proposition5 = ["Un niveau miniature", "Un mètre", "Un scotch", "Un tournevis plat"];
     proposition6 = ["Nos prénom", "Le jour de naissance", "Admiration Sea of thieves", "Les prénoms de nos papa"];
+    proposition7 = ["Arachnophobie", "Hippopotomonstrosesquippedaliophobie", "Hématophobie", "Katagélophobie"];
 
-    propositions = [proposition1, proposition2, proposition3, proposition4, proposition5, proposition6];
-    pictureName = ["calendar.png", "sports.png", "web.png", "watch.png", "tools.png", "link.png"];
+    propositions = [proposition1, proposition2, proposition3, proposition4, proposition5, proposition6, proposition7];
+    pictureName = ["calendar.png", "sports.png", "web.png", "watch.png", "tools.png", "link.png", "phobic.png"];
 
-    answerList = ["France-Suisse", proposition1[1], proposition2[0], proposition3[2], proposition4[2], proposition5[3],proposition6[1]];
+    answerList = ["France-Suisse", proposition1[1], proposition2[0], proposition3[2], proposition4[2], proposition5[3],proposition6[1], proposition7[2]];
 
     victoryCondition = answerList.length - 1;
 
@@ -35,7 +36,8 @@ function Check(selected){
     "Combien de site web que j'ai codé de A à Z sont public sur internet ?",
     "Sur quelle main je porte ma montre ?",
     "Quel outil ai-je dans ma trousse ?",
-    "Qu'ai-je pas en commun avec un de mes ami ?"];
+    "Qu'ai-je pas en commun avec un de mes ami ?",
+    "Quelle phobie est vrai me concernant ? (légère phobie)"];
 
 
 
