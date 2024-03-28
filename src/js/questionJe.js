@@ -73,7 +73,7 @@ function Victory(){
     for (let i = 0; i < buttonList.length; i++){
         buttonList[i].remove();
     }
-    question.innerHTML = "Bravo ! Ma meilleure amie me connaît parfaitement désormais ! ^^"
+    question.innerHTML = "Bravo ! Tu me connaîs parfaitement désormais ! ^^"
     text = document.createElement("h2");
     text.id = "newTitleMe";
     text.innerHTML = "Tu es tellement ";
